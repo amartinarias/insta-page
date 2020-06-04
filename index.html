@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="resources/css/index.css" type="text/css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="index.css">    
     <script src="https://kit.fontawesome.com/0de78e58bb.js" crossorigin="anonymous"></script> 
     <title>Instagram</title>
     <link href="resources/images/insta logo.png" rel="icon" type="media_type">
@@ -15,43 +14,37 @@
     <div class="page">
       
       <section class="left">
-        <img class="left__image" src="resources/images/image.jpg" alt="two smartphones" />
+        <img class="left__image" src="./images/instagram picture.PNG" alt="two smartphones" />
       </section>
 
 
       <section class="right">
         <h1 class="right__title">Instagram</h1>
-
         <form class="right__form">
           <label for="email"> 
             <input placeholder="Phone number, Username, or Email" type='text' id='mail' name='email' checked></input>
           </label> 
-
           <br>
-
-            <label for="password">
-                <input type="password" id="password" name="password" size="15" maxlenght="30" placeholder="Password" checked>
-            </label>
-
-            <br>
-            <button class="right__form--button">Log In</button>
+          <label for="password">
+            <input type="password" id="password" name="password" size="15" maxlenght="30" placeholder="Password" checked>
+          </label>
+          <br>
+          <button class="right__form--button">Log In</button>
         </form>
 
-        <h2 class="right__or">OR</h2>
-          <h3 class="right__fb">  <i class="fab fa-facebook-f"></i>Log in with Facebook</h3>
+        <div class="right__information">
+            <h2 class="right__or">OR</h2>
+            <h3 class="right__fb">  <i class="fab fa-facebook-f"></i>Log in with Facebook</h3>
             <p class="right__fb--forgot">Forgot password?</p>
-       
-        <div class="right__signup">
             <p>Don't have an account? <span class="right__signup--blue">Sign up</span> </p>
-        </div>
-        
-       <p class="right__app">Get the app.</p> 
+            <p class="right__app">Get the app.</p> 
 
-       <div class="right__pages">
-         
-            <button class="right__pages--ios">Download on the <span><i class="fab fa-apple"></i>App Store</span></button>
-            <button class="right__pages--google">Get it on <span>Google Play</span></button>
-       </div>
+        <div class="right__pages">
+              <button class="right__pages--ios">Download on the <span><i class="fab fa-apple"></i>App Store</span></button>
+              <button class="right__pages--google">Get it on <span>Google Play</span></button>
+        </div>
+        </div>
+  
       </section>
 
     </div>
