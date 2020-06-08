@@ -6,13 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-/* this is a test */
-
 /* GENERAL RULES */
 
 * {
   box-sizing: border-box;
- 
 }
 
 .page {
@@ -20,12 +17,10 @@
   justify-content: center;
   background-color: whitesmoke;
   min-width: 1280px;
-  
 }
 
 body {
   background-color: whitesmoke;
-
 }
 
 h2,
@@ -40,15 +35,22 @@ form,
 
 .left {
   border: none;
+  border: 2px solid red;
   margin-top: 50px;
+  padding-right: 0px;
+  margin-right: 0;
+  /* what is the space between the phone and box */
 }
 
 .left__image {
   width: 80%;
+  margin-right: 0;
 }
 
 /* RIGHT SIDE OF THE PAGE */
 /* why does flex center not work */
+/* does it matter what branch i edit */
+/* why does it look different in safari and how could i should that */
 
 .right {
   border: 1px solid rgb(219, 219, 219);
@@ -60,7 +62,7 @@ form,
   display: flex;
   flex-flow: column;
   align-content: center;
-  
+  margin-left: 0;
 }
 /*INSTAGRAM TITLE*/
 
@@ -72,8 +74,6 @@ form,
   width: 300px;
   display: flex;
   justify-content: center;
-  /* border-left: 1px solid rgb(219, 219, 219); */
-  /* border-right: 1px solid rgb(219, 219, 219); */
 }
 
 /* FORM */
@@ -101,7 +101,7 @@ input {
   color: white;
   font-size: 14px;
   margin-left: 35px;
-  width: 278px;
+  width: 258px;
 }
 
 .right__or {
@@ -214,6 +214,10 @@ background-color: #000 ;
   background-color: black;
 }
 
+.fa-google-play {
+  font-size: 28px;
+  float: left;
+}
 /* BOTTOMO NAV BAR */
 
 footer {
