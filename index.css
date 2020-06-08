@@ -48,18 +48,18 @@ form,
 }
 
 /* RIGHT SIDE OF THE PAGE */
+/* why does flex center not work */
 
 .right {
   border: 1px solid rgb(219, 219, 219);
   margin-top: 50px;
-  padding: 0 auto;
   background-color: white !important;
   width: 350px;
   height: 383px;
-  padding: 0 auto;
   align-items: center;
   display: flex;
   flex-flow: column;
+  align-content: center;
   
 }
 /*INSTAGRAM TITLE*/
@@ -69,12 +69,11 @@ form,
   font-weight: bold;
   font-size: 45px;
   left: 55px;
-  background-color: white !important;
-  width: 350px;
+  width: 300px;
   display: flex;
   justify-content: center;
-  border-left: 1px solid rgb(219, 219, 219);
-  border-right: 1px solid rgb(219, 219, 219);
+  /* border-left: 1px solid rgb(219, 219, 219); */
+  /* border-right: 1px solid rgb(219, 219, 219); */
 }
 
 /* FORM */
@@ -84,30 +83,33 @@ input {
   width: 258px;
   height: 36px;
   font-size: 14px;
+  background-color: whitesmoke;
+  color: rgb(219, 219, 219);
   margin: 3px;
   padding: 9px 0 7px 8px;
-  background-color: whitesmoke;
-  color: rgb(219, 219, 219) !important;
+  margin-left: 35px;
 }
 
 .right__form--button {
   border: 1px solid rgb(219, 219, 219);
-  width: 258px;
+
   height: 36px;
   margin: 3px;
   padding: 9px 0 7px 8px;
   font-size: 14px;
   background-color: lightblue;
   color: white;
-  font-weight: 600px;
   font-size: 14px;
+  margin-left: 35px;
+  width: 278px;
 }
 
 .right__or {
-  margin: 10px 40px 18px;
+  
   color: dimgray;
   font-size: 14px;
   font-weight: 400px;
+  text-align: center;
 }
 
 /* OTHER LOGIN OPTIONS */
@@ -129,25 +131,28 @@ input {
   margin-bottom: 0;
   font-weight: 600;
   font-size: 14px;
+  text-align: center;
 }
 
 .right__fb--forgot {
   color: #385185;
   font-weight: 600;
   font-size: 12px;
-}
-
-.right__signup {
-  border: 1px solid rgb(219, 219, 219);
-  padding: 10px 0;
-  margin: 0 10px;
-  width: 100%;
-  font-size: 14px;
   text-align: center;
-  background: white;
 }
 
-.right__signup--blue {
+.right__information--acc {
+  border: 1px solid rgb(219, 219, 219);
+  font-size: 14px;
+  background: white;
+  width: 350px;
+  text-align: center;
+  margin-top: 35px;
+  padding: 23px 0;
+
+}
+
+.right__information--acc--blue {
   color: rgb(0, 149, 246);
   font-size: 14px;
 }
@@ -155,14 +160,14 @@ input {
 .right__app {
 font-size: 13px;
 font: bold;
+text-align: center;
 }
 
 /* BUTTONS FOR THE APP */
 
 .right__pages{
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: center;
   }
 
 .right__pages--ios {
@@ -176,10 +181,11 @@ font: bold;
 }
 
 .fa-apple {
-font-size: 38px;
+font-size: 28px;
 color: white;
 float: left;
 background-color: #000 ;
+
 }
 
 .right__pages--ios span {
@@ -217,10 +223,10 @@ background-color: whitesmoke;
 
 .copyright {
   color: dimgray;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   margin-bottom: 0;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .menu__list {
@@ -230,12 +236,12 @@ background-color: whitesmoke;
   font-size: 12px;
   list-style: none;
   align-items: flex-end;
-  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .menu__list li {
   margin-right: 10px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 /* MEDIA QUERIES */
