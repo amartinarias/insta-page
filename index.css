@@ -48,9 +48,14 @@ form,
 }
 
 /* RIGHT SIDE OF THE PAGE */
+
 /* why does flex center not work */
-/* does it matter what branch i edit */
+
+/* what is my page size how do I test for bigger screens/ do I have to alter @media for pc?  */
 /* why does it look different in safari and how could i should that */
+
+/* github been editing the master? */
+/* does it matter what branch i edit */
 
 .right {
   border: 1px solid rgb(219, 219, 219);
@@ -251,6 +256,19 @@ background-color: whitesmoke;
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .page{
+    min-width: 768px;
+    height: auto;
+  }
+
+  body{
+    height: auto;
+  }
+ 
+  .left{
+    display: none;
+  }
+  
   form {
    
     width: 100%;
@@ -259,19 +277,29 @@ background-color: whitesmoke;
     
     width: 80%;
   }
+
+  .right__pages button {
+    background-color: whitesmoke;
+    margin: 20px;
+    border: 2px solid red;
+  }
+
+}   
+
+@media screen and (min-width: 769px) and (max-width:  1024px ){
+
+  .page {
+      min-width: 1024px;
+  } 
+
 }
 
-.page{    
-  min-width: 1280px;
- 
-  
-}
 @media screen and (max-width: 320px) {
   .page{
     min-width: 320px;
-    border: 2px solid red;
     height: auto;
   }
+
   body{
     height: auto;
   }
@@ -279,40 +307,41 @@ background-color: whitesmoke;
   .left{
     display: none;
   }
+
   .right{
-    border: 2px solid red;
     max-width: 100%;
     margin: 0;
     height: auto;
   }
+
   .right__form{
     margin-bottom: 40px;
-
   }
+
   .right__title{
     max-width: 100%;
   }
+
   .right__information{
-    border: 2px solid red;
     margin: 0;
     padding: 0;
-
   }
+
   .footer{
     max-width: 100%;
   }
+
   .menu__list {
     max-width: 320px;
     display: flex;
     flex-wrap: wrap;
-    
-    border: 1px solid red;
   }
-  .right__signup{
+
+  .right__information--acc{
     max-width: 320px;
     margin: 0;
     padding: 0;
-
+    border: none;
   }
 
   /* .page {
@@ -369,16 +398,3 @@ background-color: whitesmoke;
       border: 1px solid red;
     } */
 } 
-
-@media screen and (min-width: 321px) and (max-width: 768px)
-{
-   .page{
-       min-width: 768px;
-   }
-}   
-
-@media screen and (min-width: 769px) and (max-width:  1024px ){
-  .page{
-      min-width: 1024px;
-  } 
-}
