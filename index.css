@@ -278,12 +278,6 @@ background-color: whitesmoke;
     width: 80%;
   }
 
-  .right__pages button {
-    background-color: whitesmoke;
-    margin: 20px;
-    border: 2px solid red;
-  }
-
 }   
 
 @media screen and (min-width: 769px) and (max-width:  1024px ){
@@ -343,6 +337,7 @@ background-color: whitesmoke;
     padding: 0;
     border: none;
   }
+
 
   /* .page {
      min-width: 320px;
