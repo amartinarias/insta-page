@@ -35,27 +35,18 @@ form,
 
 .left {
   border: none;
-  border: 2px solid red;
-  margin-top: 50px;
-  padding-right: 0px;
-  margin-right: 0;
-  /* what is the space between the phone and box */
+  margin: 50px 0;
 }
 
 .left__image {
-  width: 80%;
+  width: 100%;
   margin-right: 0;
+  height: 550px;
+  width: auto;
+  margin-right: 20px;
 }
 
 /* RIGHT SIDE OF THE PAGE */
-
-/* why does flex center not work */
-
-/* what is my page size how do I test for bigger screens/ do I have to alter @media for pc?  */
-/* why does it look different in safari and how could i should that */
-
-/* github been editing the master? */
-/* does it matter what branch i edit */
 
 .right {
   border: 1px solid rgb(219, 219, 219);
@@ -68,6 +59,7 @@ form,
   flex-flow: column;
   align-content: center;
   margin-left: 0;
+
 }
 /*INSTAGRAM TITLE*/
 
@@ -87,25 +79,25 @@ input {
   border: 1px solid rgb(219, 219, 219);
   width: 258px;
   height: 36px;
-  font-size: 14px;
+  font-size: 12px !important;
   background-color: whitesmoke;
   color: rgb(219, 219, 219);
-  margin: 3px;
   padding: 9px 0 7px 8px;
-  margin-left: 35px;
+}
+
+.right__form input{
+  margin-bottom: 6px;
 }
 
 .right__form--button {
   border: 1px solid rgb(219, 219, 219);
-
   height: 36px;
-  margin: 3px;
+  margin-top: 7px;
   padding: 9px 0 7px 8px;
   font-size: 14px;
   background-color: lightblue;
   color: white;
   font-size: 14px;
-  margin-left: 35px;
   width: 258px;
 }
 
@@ -114,7 +106,7 @@ input {
   color: dimgray;
   font-size: 14px;
   font-weight: 400px;
-  text-align: center;
+  text-align: center; 
 }
 
 /* OTHER LOGIN OPTIONS */
@@ -154,6 +146,7 @@ input {
   text-align: center;
   margin-top: 35px;
   padding: 23px 0;
+  margin-top: 65px;
 
 }
 
@@ -173,6 +166,7 @@ text-align: center;
 .right__pages{
   display: flex;
   justify-content: center;
+  background-color: whitesmoke;
   }
 
 .right__pages--ios {
@@ -183,18 +177,20 @@ text-align: center;
   border-radius: 6px;
   padding: 2px 2px;
   margin-right: 10px;
+  font-size: 10px;
 }
 
 .fa-apple {
-font-size: 28px;
+font-size: 32px;
 color: white;
-float: left;
 background-color: #000 ;
-
+padding: 0;
+margin: 0;
+float: left;
 }
 
 .right__pages--ios span {
-  font-size: 15px;
+  font-size: 19px;
   text-transform: none;
   background-color: black;
 }
@@ -223,6 +219,7 @@ background-color: #000 ;
   font-size: 28px;
   float: left;
 }
+
 /* BOTTOMO NAV BAR */
 
 footer {
@@ -259,6 +256,8 @@ background-color: whitesmoke;
   .page{
     min-width: 768px;
     height: auto;
+    margin-top: 60px;
+    
   }
 
   body{
@@ -269,13 +268,39 @@ background-color: whitesmoke;
     display: none;
   }
   
+  .right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  .right__title{
+    background: white;
+    width: 350px;
+    padding-top: 20px;
+    border: 1px solid rgb(219, 219, 219);
+    border-bottom: none;
+  }
   form {
-   
-    width: 100%;
+    align-self: center;
+    max-width: 768px;
   }
   input {
     
-    width: 80%;
+    align-self: center;
+    max-width: 768px;
+  }
+  .right__information--acc {
+    border: none;
+    width: 300px;
+  }
+  .menu__list {
+    margin-top: 100px;
+    margin-left: 200px;
+    max-width: 346px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
 }   
@@ -286,6 +311,72 @@ background-color: whitesmoke;
       min-width: 1024px;
   } 
 
+  body{
+    height: auto;
+  }
+ 
+  .left{
+    display: none;
+  }
+
+  .right{
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .right__form{
+    margin-bottom: 40px;
+  }
+
+  .right__title{
+    max-width: 100%;
+  }
+
+  .right__information{
+    margin: 0;
+    padding: 0;
+  }
+
+  .right__pages {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+
+    
+  }
+
+  .footer{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .menu__list {
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 350px;
+  }
+
+  .right__information--acc{
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .copyright {
+    margin-top: 3px;
+    text-align: left;
+    
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -306,7 +397,9 @@ background-color: whitesmoke;
     max-width: 100%;
     margin: 0;
     height: auto;
+    border: none;
   }
+  
 
   .right__form{
     margin-bottom: 40px;
@@ -321,8 +414,16 @@ background-color: whitesmoke;
     padding: 0;
   }
 
+  .right__pages {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 100%;
+    
+  }
+
   .footer{
     max-width: 100%;
+    text-align: center;
   }
 
   .menu__list {
@@ -338,58 +439,19 @@ background-color: whitesmoke;
     border: none;
   }
 
-
-  /* .page {
-     min-width: 320px;
-     height: auto;
-  }
-
-  body {
-    max-width: 320px;
-    border: 2px solid purple;
+  .copyright {
+    margin-top: 3px;
+    text-align: left;
     
   }
 
-  .left {
-    display: none;
+  ul {
+    padding: 0;
+    text-align: center;
   }
 
-  .right {
-    justify-self: start;
-    max-width: 100%;
-    margin-top: 0;
-    border: 1px solid blue;
-   
-  }
-
-  .right__title {
-    max-width: 300px;
-    
-    border: 1px solid red;
-  }
-
-    footer {
-      margin-top: 180px;
-      border: 1px solid red;
-    }
-
-    .menu__list {
-      max-width: 320px;
-      display: flex;
-      flex-wrap: wrap;
-      
-      border: 1px solid red;
-    }
-    .right__signup {
-      border: 1px solid blue;
-      width: 282px;
-      font-size: 6px;
-    }
-    .right__app {
-      border: 1px solid red;
-    }
-
-    .right__pages {
-      border: 1px solid red;
-    } */
 } 
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+}
